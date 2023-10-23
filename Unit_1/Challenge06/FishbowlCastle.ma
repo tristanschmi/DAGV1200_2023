@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: FishbowlCastle.ma
-//Last modified: Mon, Oct 16, 2023 02:12:54 PM
+//Last modified: Mon, Oct 16, 2023 05:14:42 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "E4A53D1E-4070-77A9-F801-AFBB30D956E6";
+fileInfo "UUID" "E644D2BF-423C-41EE-4CED-8AA7DC4B4F81";
 createNode transform -s -n "persp";
 	rename -uid "A6BF2E6B-446C-AF38-E46C-0882E4FD907B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -15.633392768630541 28.554535680980198 61.446231179943339 ;
-	setAttr ".r" -type "double3" 1054.4616472694825 -10.599999999993322 0 ;
+	setAttr ".t" -type "double3" -11.9540832457246 12.634835123069283 30.371549350351053 ;
+	setAttr ".r" -type "double3" 1056.2616472693994 -14.999999999991237 8.2318812555270555e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0E13E424-46EC-894D-5651-E8ABF2A27B80";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 64.844881450010774;
+	setAttr ".coi" 29.898383942594382;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -77,8 +77,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "FishBowlAndCastle:polySurface1";
 	rename -uid "422331F6-41E0-3F7D-17CA-3582E7B40CCE";
-	setAttr ".t" -type "double3" 0 0 11.39855959416558 ;
-	setAttr ".r" -type "double3" 0 30.693531283370206 0 ;
+	setAttr ".t" -type "double3" 0 0 -1.0011808032076139 ;
+	setAttr ".r" -type "double3" -0.89817419615913074 27.068729967196447 7.9851689091018079 ;
 createNode mesh -n "FishBowlAndCastle:polySurface1Shape" -p "FishBowlAndCastle:polySurface1";
 	rename -uid "7E2BF778-4EF1-8EE1-75FF-CBA86351939C";
 	setAttr -k off ".v";
@@ -10201,7 +10201,7 @@ createNode mesh -n "FishBowlAndCastle:polySurfaceShape3" -p "FishBowlAndCastle:r
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "FishBowlAndCastle:pCube3";
 	rename -uid "31B916CF-4838-974B-9283-A7B353CF3A9A";
-	setAttr ".t" -type "double3" 0.073622421535447735 0 9.0885981376486882 ;
+	setAttr ".t" -type "double3" 0.073622421535447735 0 -0.794148767732751 ;
 createNode mesh -n "FishBowlAndCastle:pCube3Shape" -p "FishBowlAndCastle:pCube3";
 	rename -uid "4F270582-4AB8-E189-07CE-C0A581A09F18";
 	setAttr -k off ".v";
@@ -11167,20 +11167,20 @@ createNode mesh -n "FishBowlAndCastle:polySurfaceShape1" -p "FishBowlAndCastle:p
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "0F47C348-4CC9-F357-D1C9-8F857682ACF7";
+	rename -uid "ECCA83A2-4B62-2B60-49EA-E38F9EDB905D";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "14E886AE-4760-7F97-1265-00A4C73D2E8C";
+	rename -uid "ED274EB3-424C-F86C-CD67-518DFF93C29B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "B1047CA3-426D-FA0C-8057-CBA9F95B6EBC";
+	rename -uid "A91372E2-4AB6-5238-B67D-7EBA0C54BC20";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6B6F8059-4264-D7B2-1E47-839878B6DCBC";
+	rename -uid "098BC33E-4316-FF3C-41BF-56899D79233B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "8170A2AF-466A-8241-2BAD-0D9F39D2E0F2";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "904FEA6A-4B30-F8B8-6B86-6785A286E411";
+	rename -uid "233872D2-425C-3203-2403-5786C29033AD";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "26770F2D-4A66-C69C-DB1D-F49ECB8B7915";
 	setAttr ".g" yes;
