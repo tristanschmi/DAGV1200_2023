@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: Starship.ma
-//Last modified: Mon, Oct 30, 2023 01:48:09 PM
+//Name: StarshipUV.ma
+//Last modified: Mon, Oct 30, 2023 01:49:33 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "94CE399B-4DE9-95BF-5015-A181B781C67D";
+fileInfo "UUID" "190F8311-45B0-3581-3634-9F97797853A2";
 createNode transform -s -n "persp";
 	rename -uid "675EA5F1-4B45-2596-FFE2-0C91ABDA9CCE";
 	setAttr ".v" no;
@@ -5538,4 +5538,4 @@ connectAttr "groupId11.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId13.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId14.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId15.msg" ":initialShadingGroup.gn" -na;
-// End of Starship.ma
+// End of StarshipUV.ma
